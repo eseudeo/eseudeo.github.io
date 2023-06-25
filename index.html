@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+
+    <title>My Playground</title>
+  </head>
+
+  <body>
+    <div></div>
+    <div class="image-container"></div>
+
+    <selection id="login-container" class="login-container">
+      <div id="login">
+        <h1>Welcome</h1>
+        <h1>What is your name?</h1>
+        <form id="login-form">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="Enter your name"
+          />
+        </form>
+      </div>
+    </selection>
+
+    <selection id="contents-container" class="contents-container hidden">
+      <div class="contents-header">
+        <h1 class="font1" id="greeting"></h1>
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <hr class="mb-5" />
+      <h2 class="font1 clock" id="clock">00:00:00</h2>
+
+      <hr class="hr-short mb-5" />
+      <form id="todo-form">
+        <h3>TO DO LIST</h3>
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <div id="todo-list" class="todo-list"></div>
+      <div id="quote" class="font2">
+        <span></span>
+        <span></span>
+      </div>
+    </selection>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
