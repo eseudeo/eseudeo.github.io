@@ -5,6 +5,8 @@ const loginForm = loginContainer.querySelector("#login-form");
 const loginInput = loginForm.querySelector("input");
 const greeting = document.querySelector("#greeting");
 
+const logoutBtn = document.querySelector("#logout");
+
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "userName";
 
@@ -29,3 +31,11 @@ if (savedUsername === null) {
 } else {
   paintGreetings(savedUsername);
 }
+
+function onLogoutClick(event){
+  window.localStorage.clear();
+  loginContainer.classList.remove(HIDDEN_CLASSNAME);
+  contentsContainer.classList.add(HIDDEN_CLASSNAME);
+}
+
+logoutBtn.addEventListener("click",onLogoutClick);
