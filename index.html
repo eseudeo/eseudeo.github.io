@@ -24,9 +24,9 @@
 
   <body>
     <div></div>
-    <div class="image-container"></div>
+    <div class="display-flex  image-container"></div>
 
-    <selection id="login-container" class="login-container">
+    <selection id="login-container" class="display-flex  login-container">
       <div id="login">
         <h1>Welcome</h1>
         <h1>What is your name?</h1>
@@ -44,10 +44,14 @@
     <selection id="contents-container" class="contents-container hidden">
       <div class="contents-header">
         <h1 class="font1" id="greeting"></h1>
-        <div id="weather">
-          <span></span>
-          <span></span>
+        <div class="display-flex">
+          <div id="weather">
+            <span></span>
+            <span></span>
+          </div>
+            <button id="logout" class="logout-btn">logout</button>
         </div>
+        
       </div>
 
       <hr class="mb-5" />
